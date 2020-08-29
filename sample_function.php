@@ -9,4 +9,7 @@ explode(' ', $array);
 
 // 配列を文字列にする。改行でつなぐ
 implode("\n", $array);
+
+// 平方根（例は２乗）
+pow($N, 2)
 ?>
