@@ -28,4 +28,9 @@ if (empty($array)) {
 
 // 配列の要素をintに変換する
 $tmp_array = array_map('intval', explode(' ', $array));
+
+// 文字列の個数を検索する
+// $base_str: 調べたい文字列
+// $target_str: 見つけたい文字列
+$count = mb_substr_count($base_str, $target_str);
 ?>
