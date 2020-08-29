@@ -11,5 +11,12 @@ explode(' ', $array);
 implode("\n", $array);
 
 // 平方根（例は２乗）
-pow($N, 2)
+pow($N, 2);
+
+// 要素の最大値のキーを取得
+$maxes = array_keys($array, max($array));
+
+// 配列が空もしくはNULLかどうか判定
+if (empty($array)) {
+}
 ?>
