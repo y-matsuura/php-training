@@ -33,4 +33,7 @@ $tmp_array = array_map('intval', explode(' ', $array));
 // $base_str: 調べたい文字列
 // $target_str: 見つけたい文字列
 $count = mb_substr_count($base_str, $target_str);
+
+// 配列の要素削除：キーを指定
+unset($array[$index]);
 ?>
