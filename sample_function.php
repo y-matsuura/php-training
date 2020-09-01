@@ -36,4 +36,13 @@ $count = mb_substr_count($base_str, $target_str);
 
 // 配列の要素削除：キーを指定
 unset($array[$index]);
+
+// 配列の要素数を求める
+count($array);
+
+// 配列の先頭要素を削除する
+$res = array_shift($array);
+
+// 配列の要素を合計する
+array_sum($array)
 ?>
