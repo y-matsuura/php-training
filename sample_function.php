@@ -44,5 +44,12 @@ count($array);
 $res = array_shift($array);
 
 // 配列の要素を合計する
-array_sum($array)
+array_sum($array);
+
+// 配列の重複を削除する
+$array = array_unique($array);
+
+// 配列に含まれているか
+if (in_array($target, $array)) {
+}
 ?>
