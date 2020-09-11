@@ -52,4 +52,7 @@ $array = array_unique($array);
 // 配列に含まれているか
 if (in_array($target, $array)) {
 }
+
+// 最大値
+abs($value);
 ?>
