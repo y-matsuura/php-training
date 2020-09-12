@@ -53,6 +53,32 @@ $array = array_unique($array);
 if (in_array($target, $array)) {
 }
 
-// 最大値
+// 絶対値
 abs($value);
+
+// 複数キーでソートする
+$medals = array();
+for ($i = 0; $i < $N; ++$i) {
+    $index = $i + 1;
+    $tmp_array = explode(' ', $input_array[$index]);
+    $gold = (int)$tmp_array[0];
+    $silver = (int)$tmp_array[1];
+    $copper = (int)$tmp_array[2];
+
+    $medals[$index]['gold'] = $gold;
+    $medals[$index]['silver'] = $silver;
+    $medals[$index]['copper'] = $copper;
+}
+    
+// メダル色でソートする
+foreach ((array) $medals as $key => $value) {
+    $sort_gold[$key] = $value['gold'];
+    $sort_silver[$key] = $value['silver'];
+    $sort_copper[$key] = $value['copper'];
+}
+array_multisort(
+    $sort_gold, SORT_DESC,
+    $sort_silver, SORT_DESC,
+    $sort_copper, SORT_DESC,
+    $medals);
 ?>
