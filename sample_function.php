@@ -81,4 +81,9 @@ array_multisort(
     $sort_silver, SORT_DESC,
     $sort_copper, SORT_DESC,
     $medals);
+
+// ゼロパティング
+$str = str_pad($str, 2, '0', STR_PAD_RIGHT);
+$str = str_pad($str, 2, '0', STR_PAD_LEFT);
+$str = str_pad($str, 2, '0', STR_PAD_BOTH);
 ?>
