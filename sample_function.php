@@ -86,4 +86,25 @@ array_multisort(
 $str = str_pad($str, 2, '0', STR_PAD_RIGHT);
 $str = str_pad($str, 2, '0', STR_PAD_LEFT);
 $str = str_pad($str, 2, '0', STR_PAD_BOTH);
+
+// 10進数を2進数に変換
+decbin(10進数の数値);
+
+// 2進数を10進数に変換
+bindec( 2進数の文字列 );
+
+// 四捨五入
+round( 1.5 );
+
+// 切り上げ
+ceil( 1.5 );
+
+// 切り捨て
+floor( 1.5 );
+
+// ソート降順 / 連想キーと要素との関係を維持する
+arsort($array);
+
+// ソート降順 / 連想キーと要素との関係を維持しない
+rsort($array);
 ?>
