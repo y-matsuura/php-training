@@ -107,4 +107,10 @@ arsort($array);
 
 // ソート降順 / 連想キーと要素との関係を維持しない
 rsort($array);
+
+// 配列の要素数を数える
+$tmp_array = array_count_values($array);
+
+// 配列の要素の最大値のキーを取得する
+$maxes = array_keys($hoge, max($array));
 ?>
